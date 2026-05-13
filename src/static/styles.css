@@ -81,20 +81,52 @@ section h3 {
 }
 
 .participants-section h5 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #333;
   font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   padding-left: 0;
   margin: 0;
-  color: #555;
 }
 
 .participants-list li {
-  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.participants-list li span {
+  color: #444;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.delete-participant:hover {
+  background-color: rgba(198, 40, 40, 0.1);
 }
 
 .no-participants {
